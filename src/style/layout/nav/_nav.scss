@@ -1,0 +1,53 @@
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+
+    .navigation {
+        .menu {
+            &.menu-ul {
+                list-style: none;
+                display: flex;
+            }
+
+            &.menu-li {
+                padding: 26px 20px;
+
+                .menu__link {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        opacity: 50%;
+                    }
+                }
+
+                .menu__button {
+                    color: $cta;
+                    text-decoration: none;
+                    padding: 20px 40px;
+                    border: 2px solid $cta;
+                    border-radius: 5px;
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        background-color: white;
+                        border: 2px solid #fff;
+                    }
+                }
+            }
+        }
+
+    }
+}
