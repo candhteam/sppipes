@@ -1,5 +1,3 @@
-.banner {
-    width: 100%;
-    height: 100vh;
-    background-color: $primary;
-}
+@import 'banner-home';
+@import 'banner-logo';
+@import 'featured-products';

@@ -33,15 +33,16 @@
             align-items: center;
             height: 150px;
 
-            img {
-                background: #FFFFFF 0% 0% no-repeat padding-box;
-                border-right: 1px solid #C1CAD1;
-                padding: 10px;
+            .our-clients__images {
+                img {
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border-right: 1px solid #C1CAD1;
+                    padding: 10px;
 
-                &:nth-child(6) {
-                    border: none;
+                    &:nth-child(6) {
+                        border: none;
+                    }
                 }
-
 
             }
         }
@@ -52,12 +53,13 @@
     .banner__our-client {
         .container-alpha {
             .our-clients__list--flex {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                row-gap: 15px;
-                height: 200px;
+                .our-clients__images {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    row-gap: 15px;
+                    height: 200px;
+                }
             }
-
 
         }
     }
@@ -70,12 +72,12 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
 
+                .our-clients__images {
+                    img {
+                        border: none;
+                    }
 
-                img {
-                    border: none;
                 }
-
-
             }
         }
     }
@@ -86,15 +88,18 @@
         .container-alpha {
             .our-clients__list--flex {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 40px;
+                grid-template-columns: repeat(3, 1fr);
                 width: 100%;
                 height: 290px;
 
-                img {
-                    border: none;
-                }
+                .our-clients__images {
+                    align-items: center;
 
+
+                    img {
+                        border: none;
+                    }
+                }
 
             }
         }
