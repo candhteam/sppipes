@@ -43,10 +43,28 @@
         width: 100%;
         padding-top: 229px;
         padding-bottom: 304px;
+        @media (max-width:$media-xlg){
+            padding-top: 190px;
+            padding-bottom:140px;
+        }
+        @media (max-width:$media-lg){
+            padding-top: 170px;
+            padding-bottom:130px;
+        }
+        @media (max-width:$media-md){
+            padding-top: 190px;
+            padding-bottom:168px;
+        }
+        @media (max-width:$media-sm){
+            padding-top: 53px;
+            padding-bottom: 53px;
+          }
         @media (max-width:$media-xs){
           padding-top: 53px;
           padding-bottom: 53px;
         }
+        
+        
         .what-we-do__wrapper__left-block {
           width: 50%;
         }
@@ -58,6 +76,8 @@
             font-weight: $bold;
             font-family: $font-1;
             color: #fff;
+            padding: 0;
+            margin:0;
           }
           .what-we-do__right-block-paragraph {
             display: grid;
@@ -68,7 +88,11 @@
               font-weight: $regular;
               font-family: $font-1;
               color: #fff;
-              @media (max-width:$media-xlg){
+              @media (max-width:$media-sm){
+                font-size: 18px;
+                line-height: 28px;
+              }
+              @media (max-width:$media-xs){
                 font-size: 11px;
               line-height: 18px;
               }
