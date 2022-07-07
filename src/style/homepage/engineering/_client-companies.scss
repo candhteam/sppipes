@@ -49,59 +49,45 @@
     }
 }
 
-@media(max-width:$media-md) {
+@media(max-width:$media-xs),
+(max-width:$media-sm) {
     .banner__our-client {
         .container-alpha {
-            .our-clients__list--flex {
-                .our-clients__images {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    row-gap: 15px;
-                    height: 200px;
+            padding-bottom: 55px;
+
+
+            .our-client__heading {
+
+                padding-top: 43px;
+                padding-bottom: 23px;
+
+                h5 {
+                    font-size: 15px;
+                    text-align: center;
                 }
             }
 
-        }
-    }
-}
-
-@media(max-width:$media-xs) {
-    .banner__our-client {
-        .container-alpha {
             .our-clients__list--flex {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                height: auto;
+
 
                 .our-clients__images {
-                    img {
-                        border: none;
-                    }
-
-                }
-            }
-        }
-    }
-}
-
-@media(max-width: $media-lg) {
-    .banner__our-client {
-        .container-alpha {
-            .our-clients__list--flex {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                width: 100%;
-                height: 290px;
-
-                .our-clients__images {
+                    text-align: center;
                     align-items: center;
-
+                    display: flex;
+                    justify-content: center;
 
                     img {
+                        display: flex;
                         border: none;
+                        height: auto;
+                        width: 124px;
                     }
                 }
-
             }
+
         }
     }
 }

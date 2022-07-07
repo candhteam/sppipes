@@ -31,7 +31,8 @@
     }
 }
 
-@media(max-width: $media-xs) {
+@media(max-width: $media-xs),
+(max-width:$media-sm) {
     .Infra__heading-discription {
 
 

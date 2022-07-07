@@ -73,110 +73,96 @@
 
 
 
-@media(max-width: $media-lg) {
-    .banner-Industries {
-        .container-alpha {
-            .industries__svgs-discription {
+// @media(max-width: $media-lg) {
+//     .banner-Industries {
+//         .container-alpha {
+//             .industries__svgs-discription {
 
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                row-gap: 25px;
+//                 display: grid;
+//                 grid-template-columns: repeat(3, 1fr);
+//                 row-gap: 25px;
 
-                .automotive__svg {
-                    display: grid;
-                    justify-content: center;
-                    align-items: center;
+//                 .automotive__svg {
+//                     display: grid;
+//                     justify-content: center;
+//                     align-items: center;
 
-                    .automotive__svg--height {
-                        align-items: center;
-                        text-align: center;
-                    }
+//                     .automotive__svg--height {
+//                         align-items: center;
+//                         text-align: center;
+//                     }
 
 
-                }
-            }
-        }
+//                 }
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
-@media(max-width:$media-md) {
+// @media(max-width:$media-md) {
+//     .banner-Industries {
+//         .container-alpha {
+
+
+//             .industries__image-captions {
+//                 padding-top: 212px;
+//                 padding-bottom: 126px;
+
+//                 .industries__heading-discriptions {
+
+
+//                     p {
+//                         font-size: 20px;
+//                         font-family: $font-1;
+//                         color: $primary;
+//                         opacity: 1;
+//                         font-weight: $regular;
+//                         padding-top: 12px;
+//                         width: 415px;
+//                         height: 54px;
+
+
+//                     }
+
+//                 }
+
+//                 .industries__svgs-discription {
+
+//                     display: grid;
+//                     grid-template-columns: repeat(3, 1fr);
+
+//                     .automotive__svg--height {
+//                         display: flex;
+//                         align-items: center;
+//                         text-align: center;
+//                     }
+
+
+
+//                     .automotive_svg_caption {
+//                         display: flex;
+//                         align-items: center;
+//                     }
+
+
+
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media(max-width:$media-xs),
+(max-width:$media-sm) {
     .banner-Industries {
         .container-alpha {
 
 
             .industries__image-captions {
-                padding-top: 212px;
-                padding-bottom: 126px;
+                padding-top: 73px;
+                padding-bottom: 67px;
 
-                .industries__heading-discriptions {
-
-
-                    p {
-                        font-size: 20px;
-                        font-family: $font-1;
-                        color: $primary;
-                        opacity: 1;
-                        font-weight: $regular;
-                        padding-top: 12px;
-                        width: 415px;
-                        height: 54px;
-
-
-                    }
-
-                }
-
-                .industries__svgs-discription {
-
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-
-                    .automotive__svg--height {
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                    }
-
-
-
-                    .automotive_svg_caption {
-                        display: flex;
-                        align-items: center;
-                    }
-
-
-
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:$media-sm) {
-    .banner-Industries {
-        .container-alpha {
-
-
-            .industries__image-captions {
-                .industries__svgs-discription {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    row-gap: 10px;
-
-
-                }
-            }
-
-        }
-
-    }
-}
-
-@media(max-width: $media-xs) {
-    .banner-Industries {
-        .container-alpha {
-            .industries__image-captions {
                 .industries__heading-discriptions {
                     h3 {
                         font-size: 15px;
@@ -191,34 +177,34 @@
 
                 .industries__svgs-discription {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    row-gap: 35px;
+                    grid-template-columns: repeat(3, 1fr);
+                    padding-top: 20px;
+                    row-gap: 20px;
+                    column-gap: 20px;
 
                     .automotive__svg {
-                        row-gap: 19px;
-
                         .automotive__svg--height {
-                            height: 111px;
+                            img {
 
-
+                                height: auto;
+                                align-items: center;
+                                text-align: center;
+                            }
 
                         }
 
                         .automotive_svg_caption {
-                            width: 116px;
-                            height: 25px;
-                            align-items: center;
-                            text-align: center;
-                            display: flex;
-                            justify-content: center;
-
                             p {
                                 font-size: 11px;
+
                             }
                         }
                     }
                 }
+
             }
         }
+
     }
+
 }

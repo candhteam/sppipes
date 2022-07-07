@@ -1,6 +1,6 @@
 .home-banner {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: $primary;
     background-image: url('/static/img/graphics.png');
     background-size: 1420px;
@@ -89,6 +89,8 @@
                         gap: 30px
                     }
 
+
+
                     .rating__number-caption {
 
 
@@ -128,4 +130,58 @@
         }
 
     }
+}
+
+@media(max-width:$media-xs),
+(max-width:$media-sm) {
+    .home-banner {
+        .container-alpha {
+            .home-banner__header {
+                .slider__radio-button {
+
+                    display: flex;
+
+                    #text-radio {
+                        padding: 10px;
+                    }
+
+                    .rating-and-captions {
+                        width: 75%;
+                        overflow: hidden;
+
+
+                        .rating--grid {
+                            display: flex;
+                            position: relative;
+                            animation: slider linear 10s infinite;
+
+                            justify-content: flex-end;
+
+                            .rating__number-caption {
+                                width: 75%;
+                                flex-shrink: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@keyframes slider {
+    0% {
+        right: -200px;
+    }
+
+    50% {
+        right: 0%;
+    }
+
+    100% {
+        right: 200%;
+    }
+
+
 }
