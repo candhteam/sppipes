@@ -33,12 +33,4 @@ $('.engineering-services__image--sliding').slick({
   });
 
  
-  $('.rating--grid--none').slick({
-    breakpoint:544,
-    settings:{
-    horizontal: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    speed: 400
-  }
-  });
+ 
